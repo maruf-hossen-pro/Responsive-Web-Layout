@@ -1,0 +1,66 @@
+body{
+    border: 3px solid green;
+    max-width: 1140px;
+    margin: 0 auto;
+
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+    
+}
+
+.shoe{
+    border: 2px solid tomato;
+    border-radius: 5px;
+    background-color: rgb(190, 112, 112);
+    color: #fff;
+    
+}
+.shoe img{
+    width: 100%;
+
+}
+
+/* Smaller device? */
+@media screen and (max-width: 576px)  {
+    .container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+/* Medium Device */
+
+
+@media  screen and (min-width: 577px) and (max-width: 992px) {
+    .container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media  screen and (min-width: 993px) and (max-width: 1400px) {
+    .container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.image-container{
+    display: flex;
+}
+.image-container div{
+    width: 50%;
+}
+.image-container img{
+    width: 100%;
+
+}
+@media screen  and (max-width:576px) {
+    .image-container{
+        flex-direction: column-reverse;
+
+    }
+    .image-container div{
+        width: 100%;
+    }
+}
