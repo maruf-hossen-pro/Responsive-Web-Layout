@@ -40,7 +40,8 @@ Through this project, I practiced:
 Responsive-Web-Layout/
 │
 ├── index.html
-├── style.css
+├── style
+      └──style.css
 └── README.md
 ```
 
