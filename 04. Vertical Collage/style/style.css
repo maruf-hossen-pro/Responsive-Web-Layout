@@ -1,24 +1,36 @@
-.container{
-   height: 400px;
-
-}
-.container img{
+.row img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
-
-.img{
+.container {
     width: 100%;
-    height: 100%;
 }
-.row{
-    display: flex;
+
+.row {
     height: 400px;
+    display: flex;
+    gap: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
 }
-.row img{
-    /* width: 100%; */
-    margin: 0 auto;
 
+.row img {
+    flex: 1;
+    min-width: 0;
+}
+.city{
+    /* width: 33%; */
+    height: 198px;
+    flex: 1;
+}
 
+.vertical-collage {
+    width: 33.33%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
 }
